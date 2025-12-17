@@ -1,0 +1,43 @@
+A) ¿Cuál es la diferencia entre MySqlConnection y SqlConnection? ¿Para qué se utilizan estas clases? ¿Qué bibliotecas o namespaces se deben agregar para utilizarlas?
+
+MySqlConnection y SqlConnection son clases que se utilizan para establecer una conexión entre una aplicación desarrollada en C# y una base de datos. La principal diferencia entre ambas es el tipo de motor de base de datos con el que trabajan. MySqlConnection se utiliza para conectarse a bases de datos MySQL, mientras que SqlConnection se usa para conectarse a bases de datos SQL Server.
+
+Estas clases permiten abrir y cerrar la conexión con la base de datos, ejecutar consultas y comandos, y obtener o modificar información almacenada en las tablas.
+
+Para utilizar MySqlConnection es necesario agregar la biblioteca correspondiente al proveedor de MySQL e importar el namespace MySql.Data.MySqlClient. En el caso de SqlConnection, se utiliza el namespace System.Data.SqlClient, que forma parte de .NET.
+
+B) ¿Qué es un constructor de una clase? ¿Cómo es su sintaxis? ¿Cuántos constructores puede tener una clase y cómo se diferencian? Brinde ejemplos.
+
+Un constructor es un método especial de una clase que se ejecuta automáticamente cuando se crea un objeto de esa clase. Su función principal es inicializar los atributos del objeto. La sintaxis del constructor es particular, ya que tiene el mismo nombre que la clase y no posee tipo de retorno.
+
+Una clase puede tener uno o varios constructores. Cuando una clase tiene más de un constructor, se dice que existe sobrecarga de constructores. Estos se diferencian por la cantidad de parámetros que reciben o por el tipo de dichos parámetros.
+
+Por ejemplo, una clase puede tener un constructor sin parámetros que inicializa valores por defecto y otro constructor que recibe datos para asignarlos directamente al crear el objeto.
+
+C) ¿Qué es un void? ¿Para qué se utiliza generalmente? Brinde un ejemplo.
+
+Void es una palabra clave que se utiliza en métodos que no devuelven ningún valor. Un método declarado como void ejecuta una acción, pero no retorna información al lugar desde donde fue llamado.
+
+Generalmente se utiliza en métodos que realizan tareas como mostrar mensajes, guardar datos en una base de datos, modificar registros o ejecutar procesos internos del programa. Por ejemplo, un método que guarda un registro o muestra un mensaje por pantalla suele ser void.
+
+D) ¿Puedo crear varias funciones con el mismo nombre? En tal caso, ¿cómo se diferencian? Brinde ejemplos.
+
+Sí, es posible crear varias funciones con el mismo nombre dentro de una misma clase. Esto se conoce como sobrecarga de métodos. Los métodos se diferencian entre sí por la cantidad de parámetros que reciben, por el tipo de esos parámetros o por el orden en que aparecen.
+
+No es posible diferenciarlos únicamente por el tipo de dato que devuelven. Por ejemplo, puede existir un método que sume dos números enteros y otro método con el mismo nombre que sume dos números decimales, ya que reciben parámetros distintos.
+
+E) ¿Qué son los modificadores de acceso get y set en las propiedades de una clase?
+
+Get y set son accesores que se utilizan en las propiedades de una clase para controlar el acceso a los atributos. El get permite obtener el valor de una propiedad, mientras que el set se utiliza para asignar un valor.
+
+Estos accesores permiten encapsular los datos y aplicar validaciones antes de modificar un atributo. De esta manera se protege la información y se evita que se asignen valores incorrectos desde fuera de la clase.
+
+F) ¿Qué es .NET? ¿Qué es Visual Studio? ¿Cuáles son los elementos que contiene? ¿Qué otros lenguajes soporta? ¿Los desarrollos en .NET se ejecutan en una máquina virtual? En caso afirmativo, indique cómo se llama.
+
+.NET es una plataforma de desarrollo creada por Microsoft que permite crear distintos tipos de aplicaciones, como aplicaciones de escritorio, web, móviles y servicios. Incluye un conjunto de librerías, lenguajes de programación y un entorno de ejecución.
+
+Visual Studio es un entorno de desarrollo integrado que se utiliza para programar aplicaciones en .NET. Contiene herramientas como el editor de código, el diseñador de interfaces, el compilador, el depurador, el explorador de soluciones y el administrador de paquetes.
+
+La plataforma .NET soporta varios lenguajes, entre ellos C#, VB.NET, F#, C++ y otros a través de extensiones.
+
+Los desarrollos realizados en .NET se ejecutan sobre una máquina virtual llamada CLR (Common Language Runtime), que se encarga de administrar la memoria, ejecutar el código y controlar aspectos de seguridad.
